@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF=8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+    <title>게시물 작성</title>
+</head>
+    <h1>게시글 작성</h1>
+<style>
+</style>
+<body>
+    <div class="layout">
+        <form action="/board/writepro" method="post" enctype="multipart/form-data">
+            <input name="title" type="text">
+            <textarea name="content"></textarea>
+            <input type="file" name="file">
+            <button type="submit">작성</button>
+        </form>
+    </div>
+</body>
+</html>
